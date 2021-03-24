@@ -1,0 +1,125 @@
+@font-face{
+    font-family: Bebas;
+    src:url('./assets/fonts/Bebas.otf');
+}
+
+@font-face{
+    font-family: Nautilus;
+    src:url('./assets/fonts/Nautilus.otf');
+}
+
+@font-face{
+    font-family: Shadow;
+    src:url('./assets/fonts/Shadow.otf');
+}
+
+/* MAIN */
+
+body{
+    text-align: center;
+    width: 80vh;
+    height: 100vh;
+    margin: 0 auto;
+    font-family: Bebas;
+    background-image: url('./assets/images/background.jpg') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+input, select {
+    height: 50px;
+    font-family: Bebas;
+    font-size: 1.2rem;
+    background-color: #bfc1cd;
+  
+}
+
+
+input, #mode-select {
+    width: 50%;
+    padding-left: 3%;
+    margin: 5% 5%
+  
+}
+
+.home{
+    background-image: url('./assets/images/home-logo.png');
+    width: 44px;
+    height: 34px;
+    border: none;
+}
+
+.submit-data{
+    background-image: url('./assets/images/select-sign.png');
+    background-color: #47c59a;
+    width: 50px;
+    height: 34px;
+    border: none;
+    border-radius: 4px; 
+    background-size: cover;
+}
+
+
+/* HEADER */
+
+.title{
+    font-family: Nautilus;
+    font-size: 2.5rem;
+    color: #841cf8;
+}
+
+.love{
+    color: #ff002a;
+}
+
+h2{
+    font-size: 1rem;
+    margin-bottom: 15%;
+}
+
+
+/* MODE SECTION */ /* PUNISH SECTION */ /* TASK-SECTION */
+
+.choose{
+    margin: 3%;
+    font-family: Shadow;
+    font-size: 1rem;
+    height: 30px;
+    border: none;
+    border-radius: 4px;
+}
+
+.girl{
+    background-color: #143280;
+}
+
+.random{
+    background-color: #7eff00;
+}
+
+.boy{
+    background-color: #cc3366;
+}
+
+.fail{
+    background-color: #ff2c55;
+}
+
+.complete{
+    background-color: #00cc87;
+}
+
+.start{ 
+    height: 50px;
+    background-color: #ff002a;
+}
+
+
+.punish-form img, .love-message, .punishment, .home{
+    display: block;
+    margin: 0 auto;
+}
+
+#turn, #game-over, #punish, #task{
+    display: none;
+}

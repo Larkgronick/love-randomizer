@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="flowers.png" type="image/png">
+    <title>Love Randomizer</title>
+</head>
+<body>
+    <header>
+        <h1 class='title'>
+          <span class="love">Love</span>
+          <span>Randomizer</span>
+        </h1>
+        <h2>Выполняйте задания, встряхните ваши отношения</h2>
+    </header>
+    <main>
+        <section id="mode">
+            <form>
+                <select name="mode-select" id="mode-select">
+                    <option value="До победы" selected>До победы</option>
+                    <option value="Бесконечный" >Бесконечный</option>
+                    <button  type="sumbit">Начинаем</button>
+                </select>
+                <select name="tasks" id="tasks-count">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </form>
+            <button type="button" class='choose start'>Начинаем</button>
+        </section>
+        <section id="turn">
+            <h3>Кто ходит первый?</h3>
+            <div id="player-choise">
+               <button type="button" class='choose girl'>Девушка</button>
+               <button type="button" class='choose random'>Случайно</button>
+               <button type="button" class='choose boy'>Парень</button>
+             </div>
+            <button class='home' type="button"></button>
+        </section>
+        <section id="punish">
+            <form class="punish-form">
+                <h3>Придумайте наказание</h3>
+                <img src="./assets/images/whip-logo.png" alt="whip">
+                <input id="punish-message" type="text" name="punish-message" placeholder="Заполните поле">
+                <button class='submit-data' type="submit"></button>
+            </form>
+            <button class='home' type="button"></button>
+        </section>
+        <section id="task">
+            <h3 class="current-player">Он:</h3>
+            <h2>
+            <form class='task-form'>
+                <img class="love-message" src="./assets/images/message-icon.png" alt="love-message">
+                <input id="task-message" type="text" name="task-message" readonly>
+                <div>
+                    <button class="choose fail">Отказаться</button>
+                    <button class="choose complete">Сделано</button>
+                </div>
+                <div class='punish-block'>
+                    <img class='punishment' src="./assets/images/whip-logo.png" alt="whip">
+                    <input id="punish-result" type="text" name="punish-result" readonly>
+                </div>
+               
+            </form>
+            <button class='home' type="button"></button>
+        </section>
+        <section id="game-over">
+            <p class="title">
+                <span class='love'>Game</span>
+                <span>Over</span></p>
+            <h3 class='winner'></h3>
+            <button class='home' type="button"></button>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
